@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="BootstrapCarousel.widget.BootstrapCarousel" needsEntityContext="false" xmlns="http://www.mendix.com/widget/1.0/">
+  <name>BootstrapCarousel</name>
+  <description>The description of this widget.</description>
+
+  <icon></icon>
+
+  <properties>
+
+    <property key="main" type="entity">
+        <caption>Type of objects</caption>
+        <category>Customization</category>
+        <description>the item types</description>
+    </property>
+
+    <property key="headline" type="attribute" entityProperty="main">
+      <caption>title</caption>
+      <category>Customization</category>
+      <description>header for item</description> 
+      <attributeTypes>
+        <attributeType name="String"/> 
+      </attributeTypes>
+    </property>
+		
+    <property key="description" type="attribute" entityProperty="main" required="false">
+      <caption>description</caption>
+      <category>Customization</category>
+      <description>description </description> 
+      <attributeTypes>
+        <attributeType name="String"/> 
+		<attributeType name="Boolean"/> 
+      </attributeTypes>
+    </property>
+		
+     <property key="bannerimage" type="attribute" isPath="optional" pathType="reference" entityProperty="main">
+      <caption>Background Image</caption>
+      <category>Customization</category>
+      <description>This requires an attribute of the entity "User" with the type String.</description> 
+      <attributeTypes>
+        <attributeType name="String"/> 
+      </attributeTypes>
+    </property>
+		
+      <property key="mfOnClick" type="microflow" required="false" entityProperty="main">
+      <caption>OnClick microflow</caption>
+      <category>Customization</category>
+      <description>This microflow is the onlick action of each news</description>
+	  <returnType type="Void"></returnType>
+      </property>
+		
+     <property key="mfGetNews" type="microflow" required="true" >
+      <caption>Datasource MF</caption>
+      <category>Customization</category>
+      <description>This Microflow gets the news</description>
+	  <returnType type="Object" isList="true" entityProperty="main"></returnType>
+    </property>
+      
+      <property key="controls" type="boolean" defaultValue="true" >
+        <caption>Enable controls?</caption>
+        <category>Customization</category>
+        <description>show controls on carousel</description>
+    </property>
+      
+       <property key="listicons" type="boolean" defaultValue="true" >
+        <caption>Show item dots</caption>
+        <category>Customization</category>
+        <description>show list dot icons</description>
+    </property>
+      
+      <property key="scrollspeed" type="integer" defaultValue="10000" >
+        <caption>Scroll Speed</caption>
+        <category>Customization</category>
+        <description>Lower number higher speed and vice versa</description>
+    </property>
+      
+    <property key="headlineClass" type="string" required="false" >
+        <caption>Class for the headline</caption>
+        <category>CSS</category>
+        <description>Give a class to the headline text</description>
+    </property>
+      
+    <property key="descriptionClass" type="string" required="false" >
+        <caption>Class for the description text</caption>
+        <category>CSS</category>
+        <description>Give a class to the description text</description>
+    </property>    
+    
+    <property key="carouselID" type="string" required="false" >
+        <caption>Id for carousel if using multiple in page make unquie!</caption>
+        <category>Customization</category>
+        <description>Give carouselID a custom ID else will be defaulted</description>
+    </property>    
+      
+    <property key="carouselClass" type="string" required="false" >
+        <caption>Class for the carousel</caption>
+        <category>CSS</category>
+        <description>Give a class to the carousel</description>
+    </property>    
+      
+      
+	</properties>
+</widget>
+

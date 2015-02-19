@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<clsMXWidgetSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WidgetName>BootstrapCarousel</WidgetName>
+  <SourcePath>C:\Users\Simon Martyr\Documents\Van Zand tot Klant-main\widgets\BootstrapCarDev\BootstrapCarousel\src\</SourcePath>
+  <DestinationPath>C:\Users\Simon Martyr\Documents\Van Zand tot Klant-main\widgets\BootstrapCarDev\BootstrapCarousel\test\</DestinationPath>
+  <Monitor>false</Monitor>
+</clsMXWidgetSettings>
