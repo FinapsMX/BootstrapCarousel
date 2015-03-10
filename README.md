@@ -4,7 +4,7 @@ This widget gives you the means to create a carousel similar to the style of boo
 
 Authors
 ----
-Simon Martyr -  [email](mailto:simon.martyr@finaps.nl)  -  [twitter](https://twitter.com/vintage_si) - [github](https://github.com/simonmartyr)
+Simon Martyr -  [email](mailto:simon.martyr@finaps.nl)   - [github](https://github.com/simonmartyr)
 
 
 Typical usage scenario
@@ -60,5 +60,4 @@ Description/configuration (Widget options)
 Known bugs
 ---
 Currently known - Please feedback to the author if you encounter any. 
-
 
