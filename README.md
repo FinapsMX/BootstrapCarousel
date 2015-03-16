@@ -14,6 +14,8 @@ Typical usage scenario
 /
 [Mendix Live Example](https://www.finaps.nl)
 
+![example](http://i.imgur.com/YFteUqt.png)
+
 This widget gives the user the ability to embeded a list of objects and display their assoicated images on a mendix application. 
 
 Typical usage includes:
@@ -46,6 +48,9 @@ Installation
 Description/configuration (Widget options)
 ---
 
+![options](http://i.imgur.com/n2occmw.png)
+
+
 - Type of Objects - This is your entity type for the items in the carousel.
 - Title - This is your title attribute.
 - Description - This is your description attribute.
@@ -56,6 +61,9 @@ Description/configuration (Widget options)
 - Enable controls - Show or hides the direction arrows controls. 
 - Scroll speed - millseconds of how fast the transition. 
 - Show item dots - show or hides the counter dots. 
+
+
+![Controls & dots](http://i.imgur.com/6fQSLvJ.png)
 
 Known bugs
 ---
