@@ -323,12 +323,23 @@
                             templateCarousel = templateCarousel.split('{{showdots}}').join( this.listicons ? '' : 'style="display: none;"');
                             templateCarousel = templateCarousel.split('{{items}}').join(listItem);
                             templateCarousel = templateCarousel.split('{{carouselID}}').join(this.carouselID === '' ? 'widgetCarousel' : this.carouselID);
+                            //templateCarousel = templateCarousel.split('{{interval}}').join( this.enablescroll ? this.scollspeed : false);
                             $(this._wgtNode).html(templateCarousel);
-                            $(document).ready(function() {
-                                $('.carousel').carousel({
-                                interval: this.scrollspeed
+                            if(this.enablescroll){
+                                $(document).ready(function() {
+                                    $('.carousel').carousel({
+                                        interval: this.scrollspeed
+                                    });
                                 });
-                            });
+                            }
+                            else {
+                                $(document).ready(function() {
+                                    $('.carousel').carousel({
+                                        interval: false
+                                    });
+                                });
+                            }
+                            
                             
                         }),
                         error: function (error) {

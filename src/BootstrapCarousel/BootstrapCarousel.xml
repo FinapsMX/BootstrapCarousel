@@ -67,6 +67,12 @@
         <description>Show list dot icons</description>
     </property>
       
+      <property key="enablescroll" type="boolean" defaultValue="true" >
+        <caption>Enable Scroll</caption>
+        <category>Customization</category>
+        <description>This toggles the autoscroll functionality</description>
+    </property>
+      
       <property key="scrollspeed" type="integer" defaultValue="10000" >
         <caption>Scroll Speed</caption>
         <category>Customization</category>
