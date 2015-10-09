@@ -1,0 +1,9 @@
+Buildfile: C:\Users\Windows8\Documents\BootstrapCarousel\test\deployment\build_webui.xml
+
+deploy:
+    [unzip] Expanding: C:\Users\Windows8\Documents\BootstrapCarousel\test\widgets\BootstrapCarousel widget.mpk into C:\Users\Windows8\Documents\BootstrapCarousel\test\deployment\web\widgets
+    [unzip] Expanding: C:\Users\Windows8\Documents\BootstrapCarousel\test\widgets\SprintrFeedbackWidget.mpk into C:\Users\Windows8\Documents\BootstrapCarousel\test\deployment\web\widgets
+
+BUILD SUCCESSFUL
+Total time: 1 second
+

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="BootstrapCarousel.widget.BootstrapCarousel" needsEntityContext="false" xmlns="http://www.mendix.com/widget/1.0/">
+  <name>BootstrapCarousel</name>
+  <description>The description of this widget.</description>
+
+  <icon></icon>
+
+  <properties>
+
+    <property key="main" type="entity">
+        <caption>Input Object</caption>
+        <category>Customization</category>
+        <description>The input object type</description>
+    </property>
+
+    <property key="headline" type="attribute" entityProperty="main">
+      <caption>Title</caption>
+      <category>Customization</category>
+      <description>This is the main text (header) shown in the carousel, default center aligned but can be changed through CSS</description> 
+      <attributeTypes>
+        <attributeType name="String"/> 
+      </attributeTypes>
+    </property>
+		
+    <property key="description" type="attribute" entityProperty="main" required="false">
+      <caption>Description</caption>
+      <category>Customization</category>
+      <description>This is smaller text shown under the title in the carousel, default center aligned but can be changed through CSS</description> 
+      <attributeTypes>
+        <attributeType name="String"/> 
+		<attributeType name="Boolean"/> 
+      </attributeTypes>
+    </property>
+		
+     <property key="bannerimage" type="attribute" isPath="optional" pathType="reference" entityProperty="main">
+      <caption>Background Image</caption>
+      <category>Customization</category>
+      <description>Reference to an assoicated image file (select name)</description> 
+      <attributeTypes>
+        <attributeType name="String"/> 
+      </attributeTypes>
+    </property>
+		
+      <property key="mfOnClick" type="microflow" required="false" entityProperty="main">
+      <caption>Microflow Button</caption>
+      <category>Customization</category>
+      <description>This creates a microflow button within each item. Example: use to open the item. This is optional and expects nothing returned in the microflow.</description>
+	  <returnType type="Void"></returnType>
+      </property>
+		
+     <property key="mfGetNews" type="microflow" required="true" >
+      <caption>Datasource Microflow</caption>
+      <category>Customization</category>
+      <description>This Microflow gets a list of input Objects</description>
+	  <returnType type="Object" isList="true" entityProperty="main"></returnType>
+    </property>
+      
+      <property key="controls" type="boolean" defaultValue="true" >
+        <caption>Enable Controls</caption>
+        <category>Customization</category>
+        <description>Show controls on carousel (the two side arrows)</description>
+    </property>
+      
+       <property key="listicons" type="boolean" defaultValue="true" >
+        <caption>Show Item Dots</caption>
+        <category>Customization</category>
+        <description>Show list dot icons</description>
+    </property>
+      
+      <property key="enablescroll" type="boolean" defaultValue="true" >
+        <caption>Enable Scroll</caption>
+        <category>Customization</category>
+        <description>This toggles the autoscroll functionality</description>
+    </property>
+      
+      <property key="scrollspeed" type="integer" defaultValue="10000" >
+        <caption>Scroll Speed</caption>
+        <category>Customization</category>
+        <description>Lower number higher speed and vice versa (Milseconds)</description>
+    </property>
+      
+    <property key="headlineClass" type="string" required="false" >
+        <caption>Class For Headline</caption>
+        <category>CSS</category>
+        <description>Give a class to the headline text</description>
+    </property>
+      
+    <property key="descriptionClass" type="string" required="false" >
+        <caption>Class For Description</caption>
+        <category>CSS</category>
+        <description>Give a class to the description text</description>
+    </property>    
+    
+    <property key="carouselID" type="string" required="false" >
+        <caption>Id</caption>
+        <category>Customization</category>
+        <description>If you use more than one carousel in a page. Please make these different else this will cause errors.</description>
+    </property>    
+      
+    <property key="carouselClass" type="string" required="false" >
+        <caption>Class For The DIV</caption>
+        <category>CSS</category>
+        <description>Give a class to the whole container</description>
+    </property>    
+      
+      
+	</properties>
+</widget>
+
